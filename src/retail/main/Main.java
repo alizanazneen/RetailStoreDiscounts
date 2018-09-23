@@ -14,13 +14,13 @@ class Main {
     public static void main (String[] args)
     {   
     	User employee = new User(UserType.EMPLOYEE, "John");
-        Item groceryItem = new Product("Rice", 20, ItemType.GROCERY);
-        Item otherItem = new Product("TV", 222, ItemType.OTHER);
+        Item groceryItem = new Product("Pulse", 30, ItemType.GROCERY);
+        Item otherItem = new Product("Mobile", 200, ItemType.OTHER);
         DiscountPolicy discountPolicy = new ThresholdDiscount();
         
         Cart cart = new Cart(employee, discountPolicy);
-        cart.add(groceryItem, 4);
-        cart.add(otherItem, 4);
+        cart.add(groceryItem, 3);
+        cart.add(otherItem, 3);
         
         /*
          *  Total (20 * 4) + (222 * 4) = 968

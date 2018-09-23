@@ -31,12 +31,12 @@ public class TestDiscounts {
 
     @Before
     public void setUp() {
-    	employee = new User(UserType.EMPLOYEE, "John");
-    	affiliate = new User(UserType.AFFILIATE, "Michael");
-    	simpleUser = new User(UserType.SIMPLE, "Bob");
-    	simpleUserWith2Years = new User(UserType.SIMPLE, "Alex", LocalDateTime.of(2014, 7, 19, 6, 40, 45));
-        groceryItem = new Product("Rice", 20, ItemType.GROCERY);
-        otherItem = new Product("TV", 222, ItemType.OTHER);
+    	employee = new User(UserType.EMPLOYEE, "Pual");
+    	affiliate = new User(UserType.AFFILIATE, "Smith");
+    	simpleUser = new User(UserType.SIMPLE, "Jojo");
+    	simpleUserWith2Years = new User(UserType.SIMPLE, "Paddy", LocalDateTime.of(2014, 7, 19, 6, 40, 45));
+        groceryItem = new Product("Pulse", 20, ItemType.GROCERY);
+        otherItem = new Product("Mobile", 222, ItemType.OTHER);
         discountPolicy = new ThresholdDiscount();
     }
 

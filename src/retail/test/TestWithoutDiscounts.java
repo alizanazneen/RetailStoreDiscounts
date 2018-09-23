@@ -22,7 +22,7 @@ public class TestWithoutDiscounts {
 
     @Before
     public void setUp() {
-    	User user = new User(UserType.SIMPLE, "John");
+    	User user = new User(UserType.SIMPLE, "Ane");
         cart = new Cart(user);
         item = new Product("something", 1000, ItemType.OTHER);
     }
