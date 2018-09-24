@@ -22,12 +22,7 @@ class Main {
         cart.add(groceryItem, 3);
         cart.add(otherItem, 3);
         
-        /*
-         *  Total (20 * 4) + (222 * 4) = 968
-         *  No discount on grocery items = 968 still
-         *  After 30% discount on 4 other items totalling 888 = 701.6
-         *  After 35 dollars off due to price over $700 = 666.59999 or 666.6 
-         */
-        System.out.println(cart.total());        
+        System.out.println(cart.total());    
+        //o/p -  485.0
     }
 }
